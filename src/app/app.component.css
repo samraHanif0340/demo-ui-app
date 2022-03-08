@@ -1,0 +1,126 @@
+/* You can add global styles to this file, and also import other style files */
+
+#imageCarousel{
+    height: 500px;
+    width: 350px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #ccc;
+}
+img {
+    height: 500px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #ccc;
+  }
+
+.text-right{
+    text-align: right;
+}
+
+.circle{
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-color: black;
+    border:1px solid;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #FFD600;
+
+}
+.circle.classWhite {
+    background-color: whitesmoke;
+    border-color: grey;
+}
+.circle.classBlack {
+    background-color: black;
+    border-color: grey;
+}
+.circle.classRed {
+    background-color: red;
+    border-color: grey;
+}
+.circle.classGreen {
+    background-color: green;
+    border-color: grey;
+}
+.circle.classYellow {
+    background-color: yellow;
+    border-color: grey;
+}
+
+.content{
+    text-align: justify;
+    text-justify: inter-word;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.size-guide-css {
+    color: black;
+    text-align: right;    
+}
+
+a:hover{
+    color:darkblue;
+}
+
+label::after{
+    content: "⭐";
+    border: #FFD600;
+}
+
+.breadcrumb {
+    padding: 5px 10px;
+    box-shadow: 1px 4px 10px #ccc;
+    background-color: white;
+    width: max-content;
+    border-radius: 10px;
+}
+
+.breadcrumb a {
+    color: black;
+}
+
+breadcrumb-divider::before{
+    content:'/'
+}
+
+.add-cart-button{
+    border-radius: 6px;
+    
+}
+
+.btn{
+    border-radius: 15px;
+}
+
+
+.icon-bar {
+    border-radius: 10px;
+    font-size: 20px;
+    width: 40px;
+    float: right;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    margin: 15px;
+    z-index: 9;
+    background-color: white; /* Dark-grey background */
+  }
+  
+  .icon-bar a {
+    display: block; /* Make the links appear below each other instead of side-by-side */
+    text-align: center; /* Center-align text */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: black; /* White text color */
+  }
+  
+  .icon-bar a:hover {
+    background-color: grey; /* Add a hover color */
+  }
+
+  .btn-add-to-cart{
+      width: 100%;
+  }

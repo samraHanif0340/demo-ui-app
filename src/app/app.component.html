@@ -1,0 +1,129 @@
+<div class="container py-5">
+  <!-- <h1>Install Bootstrap 5 in Angular 13 - ItSolutionStuff.com</h1> -->
+  <div class="row">
+    <nav class="breadcrumb-divider" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">Home</li>
+        <li class="breadcrumb-item" aria-current="page">Products</li>
+        <li class="breadcrumb-item active" aria-current="page"><a href="#">Blue Color Jacket</a></li>
+      </ol>
+    </nav>
+  </div>
+
+
+  <div class="row">
+    <div class="col-lg-4">
+      <div id="imageCarousel" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+
+        <div class="icon-bar">
+          <a class="active" href="#"><i class="fa fa-heart"></i></a>
+          <a href="#"><i class="fa fa-globe"></i></a>
+          <a href="#"><i class="fa fa-star"></i></a>
+        </div>
+        
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="../assets/jacket3.jfif" class="d-block w-100" alt="Blue Jacket">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Blue Jacket </h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="../assets/jac2.jpg" class="d-block w-100" alt="Blue Jacket Back View">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Blue Jacket Back View</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="../assets/jac1.jpg" class="d-block w-100" alt="Blue Leather Jacket">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Blue Leather Jacket </h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button> -->
+      </div>
+    </div>
+
+    <div class="col-lg-8">
+      <button type="button" class="btn btn-outline-dark">Jacket Brief</button>
+      <h1 class="mt-3">Blue Leather Jacket</h1>
+
+      <div class="col-lg-12">
+
+        <span *ngFor="let rating of ratingList; let i=index">
+          <label for="5"></label>
+        </span>
+      </div>
+      <p class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book.</p>
+
+      <div class="text-right">
+        <a class="size-guide-css" href="#">Size Guide</a>
+      </div>
+
+      <div class="pb-2">
+        <span class="px-2 py-2" *ngFor="let rating of ratingList; let i=index">
+          <span [ngClass]="{'classRed': rating.class == 'classRed' , 
+      'classGreen': rating.class == 'classGreen' , 
+      'classYellow': rating.class == 'classYellow',
+      'classBlack': rating.class == 'classBlack',
+      'classWhite': rating.class == 'classWhite'}" class="circle"></span>
+        </span>
+      </div>
+
+      <div class="card pt-7">
+        <div class="card-header">
+          Size
+        </div>
+        <div class="card-body">
+          <div class="row" *ngFor="let size of sizes">
+            <div class="col-lg-2">
+              <input type="radio" [value]="size.value" [checked]="size.value" />
+            </div>
+            <div class="col-lg-6">
+              <p>{{size.sizeDescription}}</p>
+            </div>
+            <div class="col-lg-4 text-right">
+              <p>{{size.price}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 pt-4">
+          <ul class="list-group list-group-horizontal-sm">
+            <li class="list-group-item">-</li>
+            <li class="list-group-item">1</li>
+            <li class="list-group-item">+</li>
+          </ul>
+        </div>
+        <div class="col-lg-9 pt-4">
+          <button type="button" class="btn btn-dark btn-lg btn-block btn-add-to-cart">$25.20 | Add to Cart</button>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+</div>
